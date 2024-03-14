@@ -1,0 +1,190 @@
+/* custom css goes here */
+.input-group-addon:first-child
+{
+    border-right: 0;
+}
+
+.input-group-addon
+{
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    border: 1px solid darkgrey;
+    border-radius: 4px; 
+}
+
+.input-group-addon .fa
+{
+    font-size: 18px;
+}
+
+.input-group .form-control
+{
+    position:relative;
+    z-index: 2;
+    float:left;
+    margin-bottom: 0;
+}
+
+.input-group .form-control:last-child
+{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+.login
+{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: lightgrey;
+    border-radius: .3rem;
+}
+
+.login input
+{
+    background-color: white;
+    border-color: darkgrey;
+    border-radius: .4em;
+    width: 100%;
+}
+
+.edit-task
+{
+    position: relative;
+    top: -31px;
+    display: none;
+}
+
+/*
+Lab 2
+Group Members:
+- Yashvi Patel: 100900705
+- Justin Wastle: 100869386
+- Andrew Mekhail: 100828858
+Date: February 18th, 2024 
+*/
+
+body{
+    background-color:#FDFFFC;
+}
+.about-us {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 10px;
+    padding-left: 60px;
+}
+.image-container {
+    background-image: url('../images/homepage.gif');
+    /* image src 'https://www.pinterest.ca/pin/588704982569795906/'*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+
+/* home page */
+.home-container {
+    align-items: flex-start;
+    max-width: 800px; 
+    margin: 0px 40px 20px 700px; 
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-size: larger;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/*About us page */
+.details {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 10px;
+}
+
+.details img {
+    width: 200px;
+    height:350px;
+    border-radius: 20px;
+}
+
+.card {
+    border: #000;
+    border-style: solid;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 2px;
+    margin: 8px;
+    border-radius: 20px;
+}
+
+
+.container {
+    padding: 0 16px;
+    margin-top: 5px;
+    text-align: center;
+}
+.container p{
+    width: 200px;
+    padding-left: 500px;
+    font-size: larger;
+}
+
+
+/*Products Page*/
+div.products{
+    display: flex;
+    padding: 50px  80px  50px 90px;
+    
+}
+.products img{
+    margin: 7px;
+    width: 500px; 
+    border-radius: 10px;
+    height: 350px;
+    float: right;
+
+     
+}
+.products p{
+    width: 500px;
+    font-size:larger;
+    line-height: 2;
+    padding: 20px;
+    font-style: italic;
+    
+}
+
+/*Contact Us Page*/
+div.contact{
+    padding-left: 33.5%;
+}
+
+
+/* lab 2 login and registration form */
+#UserRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa; /* Optional background color */
+}
+
+#UserRegister form {
+    max-width: 550px;
+    padding: 20px;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 10px; /* Border radius for rounded corners */
+    background-color: lightgray; 
+}
+
+#UserRegister p {
+    text-align: center;
+}
