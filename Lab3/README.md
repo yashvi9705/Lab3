@@ -1,3 +1,3 @@
-# WEBD6201-W2021-Lab3-Starter
+# Inft2201-Lab3
 
-This is a starter project for Lab 3
+This is a  project for Lab 3
