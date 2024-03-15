@@ -100,7 +100,7 @@ router.AddTable(["/",
                  "/taskList"]);
                 
 let route = location.pathname; // alias for location.pathname
-console.log("Current route:", route);
+
 
 if(router.Find(route) > -1)
 {
