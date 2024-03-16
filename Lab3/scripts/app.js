@@ -1,4 +1,11 @@
-/* custom JavaScript goes here */
+/*
+Lab 3
+Group Members:
+- Yashvi Patel: 100900705
+- Justin Wastle: 100869386
+- Andrew Mekhail: 100828858
+Date: March 15, 2024 
+*/
 
 //IIFE - Immediately Invoked Function Expression
 //AKA - Anonymous Self-Executing Function
@@ -62,7 +69,11 @@
       });
       
     }
-
+    /**
+     * Inject the footer in the footer element
+     * 
+     * @returns {void}
+     */
     function loadFooter()
     {
       // inject the Footer
@@ -72,6 +83,11 @@
       });
     }
 
+    /**
+     * Inject the content for the home page
+     * 
+     * @returns {void}
+     */
     function displayHome()
     {
       let mainContent = document.querySelector("main");
@@ -116,6 +132,11 @@
       
     }
 
+    /**
+     * Inject the about content on the about page
+     * 
+     * @returns {void}
+     */
     function displayAbout()
     {
       let mainContent = document.querySelector("main");
@@ -176,6 +197,11 @@
 
     }
 
+    /**
+     * Inject the project content on the project page
+     * 
+     * @returns {void}
+     */
     function displayProjects()
     {
       let mainContent = document.querySelector("main");
@@ -226,6 +252,11 @@
       
     }
 
+    /**
+     * Inject the services content on the services page
+     * 
+     * @returns {void}
+     */
     function displayServices()
     {   
       let mainContent = document.querySelector("main");
@@ -279,6 +310,11 @@
         mainContent.appendChild(servicesDiv); 
     }
 
+    /**
+     * Validate the first name on the registration page
+     * 
+     * @returns {void}
+     */
     function testFullName()
     {
       let messageArea = $("#messageArea").hide();
@@ -299,6 +335,11 @@
         });
     }
 
+    /**
+     * Validates the contact number on the registration page
+     * 
+     * @returns {void}
+     */
     function testContactNumber()
     {
       let messageArea = $("#messageArea");
@@ -318,6 +359,12 @@
         });
     }
 
+
+    /**
+     * Validates the email on the registration page
+     * 
+     * @returns {void}
+     */
     function testEmailAddress()
     {
       let messageArea = $("#messageArea");
@@ -337,6 +384,11 @@
         });
     }
 
+    /**
+     * Executes all the validation functions for the registration form
+     * 
+     * @returns {void}
+     */
     function formValidation()
     {
       testFullName();
@@ -344,6 +396,9 @@
       testEmailAddress();
     }
 
+    /**
+     * Inject the contact content on the contact page
+     */
     function displayContact()
     {
       // form validation
@@ -365,6 +420,11 @@
         });
     }
 
+    /**
+     * Inject the contact list data
+     * 
+     * @returns {void} 
+     */
     function displayContactList() 
     {
       // don't allow visitors to go here
@@ -427,6 +487,9 @@
       }
     }
 
+    /**
+     * Inject the contact list edit content to allow the user to edit the contact list
+     */
     function displayEdit()
     {
       let key = location.hash.substring(1);
@@ -569,6 +632,9 @@
 
     }
 
+    /**
+     * Injects the registration form and content on the register page
+     */
     function displayRegister()
     {
       let mainContent = document.querySelector("main");
@@ -753,6 +819,9 @@
 
     }
 
+    /**
+     * Toggles the login button on/off based on whether the user is logged on or not
+     */
     function toggleLogin()
     {
       // if user is logged in
@@ -780,12 +849,8 @@
           $(this).css('cursor', 'pointer');
         });
        
-        $(`<li class="nav-item">
-        <a id="contact-list" class="nav-link" aria-current="page"><i class="fas fa-users fa-lg"></i> Contact List</a>
-      </li>`).insertBefore("#loginListItem");
-      $(`<li class="nav-item">
-      <a id="taskList" class="nav-link" aria-current="page"><i class="fas fa-tasks fa-lg"></i> Task List</a>
-    </li>`).insertBefore("#contactListItem");
+        $(`<li class="nav-item"><a id="contact-list" class="nav-link" aria-current="page"><i class="fas fa-users fa-lg"></i> Contact List</a></li>`).insertBefore("#loginListItem");
+        $(`<li class="nav-item"><a id="taskList" class="nav-link" aria-current="page"><i class="fas fa-tasks fa-lg"></i> Task List</a></li>`).insertBefore("#contactListItem");
       }
 
       else
@@ -797,6 +862,9 @@
       }
     }
 
+    /**
+     * Checks if the user is currently logged in and redirects to the login page if not
+     */
     function authGuard()
     {
       if(!sessionStorage.getItem("user"))
@@ -808,6 +876,9 @@
       }
     }
 
+    /**
+     * Injects 404 page not found content when the page is unavailable
+     */
     function display404()
     {
       let mainContent = document.querySelector("main");
@@ -829,6 +900,12 @@
 
     }
 
+    /**
+     * Returns the function to inject the content for the activeLink provided
+     * 
+     * @param {string} activeLink 
+     * @returns function
+     */
     function ActiveLinkCallBack(activeLink)
     {
       switch (activeLink) 
@@ -849,8 +926,6 @@
           break;
       }
     }
-
-    
 
     /**
      * This function adds a new Task to the TaskList
@@ -945,6 +1020,9 @@
         });
     }
 
+    /**
+     * Injects the header, content and footer for the current active link.
+     */
     function Start()
     {
         console.log("App Started...");
